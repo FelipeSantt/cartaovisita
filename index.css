@@ -4,6 +4,7 @@
     list-style: none;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
 }
 
 #container {
@@ -47,21 +48,32 @@
 #container .redes li a {
     width: 46px;
     height: 46px;
-    background-color: white;
+    background-color: gray;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 100%;
     font-size: 20px;
-    color: rgb(196, 8, 8);
+    color: white;
+}
+
+#container .redes li a:hover {
+    background-color: rgb(6, 4, 4);
+    transition: all 200ms ease-in;
 }
 
 #container .links li a {
-    background-color: white;
+    background-color: gray;
     display: block;
     margin-bottom: 16px;
     line-height: 46px;
     border-radius: 35px;
+    color: white;
+}
+
+#container .links li a:hover {
+    background-color: rgb(6, 4, 4);
+    transition: all 200ms ease-in;
 }
 
 @media only screen and(max-width: 480px) {
